@@ -1,13 +1,13 @@
 {
   "project_info": {
-    "project_number": "783697441480",
-    "project_id": "cronorutas-cec37",
-    "storage_bucket": "cronorutas-cec37.firebasestorage.app"
+    "project_number": "7 ",
+    "project_id": " ",
+    "storage_bucket": " "
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:783697441480:android:1adeacc97dfbd232186bfd",
+        "mobilesdk_app_id": "1 ",
         "android_client_info": {
           "package_name": "com.brownie.cronorutas"
         }
@@ -15,7 +15,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyDOO5YVcWYYsqmoa6q9T-t1m7IXAoVQyJA"
+          "current_key": " "
         }
       ],
       "services": {
