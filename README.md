@@ -1,7 +1,6 @@
 # CronoRutas
 ## **Nota:** 
-Como tuve varios problemas con las librerias y paqueterias que uso en laravel por la nueva versión decidí mejor hacerlo con Django y agilizar el desarrollo
-La versión Web correcta es la que dice **cronoRutasW**
+Al comienzo de este proyecto se tuvieron varios tropiezos ya que no se tenia la experiencia necesaria para poder compilar en java y ahora que se ha tenido una mejor vision se actualiza nuestro conocimiento reforzando la confianza y el esfuerzo para este proyecto que sera conocido como **CronoRutas**
 
 ## Para instalar el proyecto:
 - crear un entorno virual de python
