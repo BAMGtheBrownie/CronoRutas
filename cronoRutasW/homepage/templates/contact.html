@@ -1,0 +1,240 @@
+{% load static%}
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>CronoRutas - Home page</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href=" {% static 'website/assets/img/logo.png' %} " rel="icon">
+  <link href=" {% static 'website/assets/img/apple-touch-icon.png' %} " rel="apple-touch-icon">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href=" {% static 'website/assets/vendor/aos/aos.css' %} " rel="stylesheet">
+  <link href=" {% static 'website/assets/vendor/bootstrap/css/bootstrap.min.css' %} " rel="stylesheet">
+  <link href=" {% static 'website/assets/vendor/bootstrap-icons/bootstrap-icons.css' %} " rel="stylesheet">
+  <link href=" {% static 'website/assets/vendor/glightbox/css/glightbox.min.css' %} " rel="stylesheet">
+  <link href=" {% static 'website/assets/vendor/remixicon/remixicon.css' %} " rel="stylesheet">
+  <link href=" {% static 'website/assets/vendor/swiper/swiper-bundle.min.css' %} " rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href=" {% static 'website/assets/css/style.css' %} " rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: FlexStart
+  * Updated: Sep 18 2023 with Bootstrap v5.3.2
+  * Template URL: https://bootstrapmade.com/flexstart-bootstrap-startup-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header fixed-top">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+      <a href="/#hero" class="logo d-flex align-items-center">
+        <img src=" {% static 'website/assets/img/logo.png' %} " alt="">
+        <span>CronoRutas</span>
+      </a>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="/#hero">Inicio</a></li>
+          <li><a class="nav-link scrollto" href="/#services">Servicios</a></li>
+          <li><a class="nav-link scrollto" href="/contact">Contacto</a></li>
+          <li><a class="nav-link scrollto" href="{%url 'view-drivers'%}">Mi Tablero</a></li>
+          <li><a class="getstarted scrollto" href="/signin">Iniciar Sesión</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+ 
+    <!-- ======= Contact Section ======= -->
+    <section id="contacto" class="contact">
+
+      <div class="container" data-aos="fade-up">
+
+        <header class="section-header">
+          <h2>Contacto </h2> 
+          <p>Contactanos</p>
+        </header>
+
+        <div class="row gy-4">
+
+          <div class="col-lg-6">
+
+            <div class="row gy-4">
+              <div class="col-md-6">
+                <div class="info-box">
+                  <i class="bi bi-geo-alt"></i>
+                  <h3>Direccion</h3>
+                  <p>Blvd. Gral. Marcelino García Barragán 1421,
+                    <br>Olímpica, 44430 Guadalajara</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="info-box">
+                  <i class="bi bi-telephone"></i>
+                  <h3>Llamanos</h3>
+                  <p>+33 3333 3333<br>+33 3333 3333</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="info-box">
+                  <i class="bi bi-envelope"></i>
+                  <h3>Correo</h3>
+                  <p>cronorutas@gmail.com</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="info-box">
+                  <i class="bi bi-clock"></i>
+                  <h3>Horario</h3>
+                  <p>Lunes a Viernes<br>9:00AM - 05:00PM</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-lg-6">
+            <form action="{% url 'contact' %}" method="POST">
+              {% csrf_token %}
+              <div class="row gy-4">
+
+                <div class="col-md-12">
+                  <input type="text" name="name" class="form-control" placeholder="Nombre" minlength='9' required >
+                </div>
+
+
+                <div class="col-md-12 ">
+                  <input type="email" class="form-control" name="email" placeholder="Correo" required>
+                </div>
+
+                <div class="col-md-12">
+                  <input type="text" class="form-control" name="subject" placeholder="Asunto" minlength='5' required>
+                </div>
+
+                <div class="col-md-12">
+                  <input type="tel" class="form-control" name="phone" placeholder="33 3333 3333" minlength='10' maxlength= required>
+                </div>
+
+                <div class="col-md-12">
+                  <textarea class="form-control" name="message" rows="6" placeholder="Mensaje" minlength='10' required></textarea>
+                </div>
+
+          
+                  <button class="btn btn-primary">Enviar</button>
+                
+
+              </div>
+            </form>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-5 col-md-12 footer-info">
+            <a href="/#hero" class="logo d-flex align-items-center">
+              <img src=" {% static 'website/assets/img/logo.png' %} " alt="">
+              <span>CronoRutas</span>
+            </a>
+            <p>CronRutas, es un proyecto de la empresa ABMODEL diseñado para mejorar
+              la movilidad urbana en la ZMG.</p>
+            <div class="social-links mt-3">
+              <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+              <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+              <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+              <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-6 footer-links">
+            <h4>Enlaces</h4>
+            <ul>
+              <li><i class="bi bi-chevron-right"></i> <a href="/#hero">Inicio</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Terminos de Servivio</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Politicas de Privacidad</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-2 col-6 footer-links">
+            <h4>Nuestros Servicios</h4>
+            <ul>
+              <li><i class="bi bi-chevron-right"></i> <a href="/#services">Panel Administrador</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Aplicación Movil</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+            <h4>Contact Us</h4>
+            <p>
+              Blvd. Gral. Marcelino García Barragán 1421<br>
+              Olímpica, 44430 Guadalajara<br>
+              Jalisco, México <br><br>
+              <strong>Telefono:</strong> +33 3333 3333<br>
+              <strong>Correo:</strong> cronorutas@gmail.com<br>
+            </p>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>CronoRutas</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/flexstart-bootstrap-startup-template/ -->
+        <!-- Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> -->
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src=" {% static 'website/assets/vendor/purecounter/purecounter_vanilla.js' %} "></script>
+  <script src=" {% static 'website/assets/vendor/aos/aos.js' %} "></script>
+  <script src=" {% static 'website/assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %} "></script>
+  <script src=" {% static 'website/assets/vendor/glightbox/js/glightbox.min.js' %} "></script>
+  <script src=" {% static 'website/assets/vendor/isotope-layout/isotope.pkgd.min.js' %} "></script>
+  <script src=" {% static 'website/assets/vendor/swiper/swiper-bundle.min.js' %} "></script>
+  <script src=" {% static 'website/assets/vendor/php-email-form/validate.js' %} "></script>
+
+  <!-- Template Main JS File -->
+  <script src=" {% static 'website/assets/js/main.js' %} "></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

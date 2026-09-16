@@ -1,0 +1,74 @@
+[
+    {
+        "id_driver": 3,
+        "name": "Francisco Gonzalez",
+        "email": "correo3@ejemplo.com",
+        "password": "Contraseña123*",
+        "phone": "3333333333",
+        "route": "626",
+        "id_owner": 2
+    },
+    {
+        "id_driver": 4,
+        "name": "Jesús Vazquez",
+        "email": "correo4@ejemplo.com",
+        "password": "Contraseña123*",
+        "phone": "3333333333",
+        "route": "275B",
+        "id_owner": 2
+    },
+    {
+        "id_driver": 5,
+        "name": "Sutano de Tal",
+        "email": "correo5@ejemplo.com",
+        "password": "Contraseña123*",
+        "phone": "3333333333",
+        "route": "371",
+        "id_owner": 2
+    },
+    {
+        "id_driver": 6,
+        "name": "Jose Gonzalez",
+        "email": "correo6@ejemplo.com",
+        "password": "Contraseña123*",
+        "phone": "3333333333",
+        "route": "371",
+        "id_owner": 2
+    },
+    {
+        "id_driver": 9,
+        "name": "Fernando Santillan",
+        "email": "correo9@ejemplo.com",
+        "password": "Contraseña123*",
+        "phone": "3333333333",
+        "route": "647",
+        "id_owner": 4
+    },
+    {
+        "id_driver": 12,
+        "name": "Saul Lopez",
+        "email": "correo12@ejemplo.com",
+        "password": "Contraseña123*",
+        "phone": "3333333333",
+        "route": "647 A",
+        "id_owner": 4
+    },
+    {
+        "id_driver": 13,
+        "name": "Alberto Jimenez",
+        "email": "correo13@ejemplo.com",
+        "password": "Contraseña123*",
+        "phone": "3333333333",
+        "route": "604",
+        "id_owner": 4
+    },
+    {
+        "id_driver": 14,
+        "name": "Fulano de Tal",
+        "email": "correo14@ejemplo.com",
+        "password": "Contraseña123*",
+        "phone": "3333333333",
+        "route": "602",
+        "id_owner": 4
+    }
+]

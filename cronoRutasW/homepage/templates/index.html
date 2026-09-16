@@ -1,0 +1,344 @@
+{% load static%}
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>CronoRutas - Home page</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href=" {% static 'website/assets/img/logo.png' %} " rel="icon">
+  <link href=" {% static 'website/assets/img/apple-touch-icon.png' %} " rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href=" {% static 'website/assets/vendor/aos/aos.css' %} " rel="stylesheet">
+  <link href=" {% static 'website/assets/vendor/bootstrap/css/bootstrap.min.css' %} " rel="stylesheet">
+  <link href=" {% static 'website/assets/vendor/bootstrap-icons/bootstrap-icons.css' %} " rel="stylesheet">
+  <link href=" {% static 'website/assets/vendor/glightbox/css/glightbox.min.css' %} " rel="stylesheet">
+  <link href=" {% static 'website/assets/vendor/remixicon/remixicon.css' %} " rel="stylesheet">
+  <link href=" {% static 'website/assets/vendor/swiper/swiper-bundle.min.css' %} " rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href=" {% static 'website/assets/css/style.css' %} " rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: FlexStart
+  * Updated: Sep 18 2023 with Bootstrap v5.3.2
+  * Template URL: https://bootstrapmade.com/flexstart-bootstrap-startup-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header fixed-top">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+      <a href="/#hero" class="logo d-flex align-items-center">
+        <img src=" {% static 'website/assets/img/logo.png' %} " alt="">
+        <span>CronoRutas</span>
+      </a>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="/#hero">Inicio</a></li>
+          <li><a class="nav-link scrollto" href="/#services">Servicios</a></li>
+          <li><a class="nav-link scrollto" href="/contact">Contacto</a></li>
+          <li><a class="nav-link scrollto" href="{%url 'view-drivers'%}">Mi Tablero</a></li>
+          <li><a class="getstarted scrollto" href="/signin">Iniciar Sesión</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+ 
+  <!-- ======= Hero Section ======= -->
+
+  <section id="hero" class="hero d-flex align-items-center">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 d-flex flex-column justify-content-center">
+          <h1 data-aos="fade-up">Agiliza tus tiempos de espera del transporte</h1>
+          <h2 data-aos="fade-up" data-aos-delay="400">Llega a tiempo a cualquier lugar con el servicio de geolocalización de rutas</h2>
+          <div data-aos="fade-up" data-aos-delay="600">
+            <div class="text-center text-lg-start">
+              <a href="#" class="btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center">
+                <span>Ir a la App</span>
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 hero-img" data-aos="zoom-out" data-aos-delay="200">
+          <img src=" {% static 'website/assets/img/hero_img.png' %} " class="img-fluid" alt="">
+        </div>
+      </div>
+    </div>
+
+  </section><!-- End Hero -->
+
+  <main id="main">
+    <!-- ======= About Section ======= -->
+    <section id="services" class="about">
+    
+      <div class="container" data-aos="fade-up">
+        <header>
+          <h2>Para los propietarios de rutas de transporte</h2>
+        </header>
+        <div class="row gx-0">
+          <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
+            <div class="content">
+              <h3>Panel Administrativo</h3>
+              <h2>Gestiona a tus conductores desde un solo lugar.</h2>
+              <p>Te proporcionamos un panel de administración desde el cual podrás llevar 
+                un registro más sencillo de todos los conductores a tu cargo.
+              </p>
+              <div class="text-center text-lg-start">
+                <a href="#" class="btn-read-more d-inline-flex align-items-center justify-content-center align-self-center">
+                  <span>Comenzar</span>
+                  <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="200">
+            <img src=" {% static 'website/assets/img/about.png' %} " class="img-fluid" alt="">
+          </div>
+
+        </div>
+      </div>
+
+    </section><!-- End About Section -->
+
+    <!-- ======= Values Section ======= -->
+    <section id="values" class="values">
+
+      <div class="container" data-aos="fade-up">
+
+        <header class="section-header">
+          <h2>Nuestros Valores</h2>
+          <p>Nuestra Misión</p>
+        </header>
+
+        <div class="row">
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="box">
+              <img src=" {% static 'website/assets/img/values-1.png' %} " class="img-fluid" alt="">
+              <h3>Administra mejor a tus empleados</h3>
+              <p>Manten un mejor control de los conductores y las rutas de transporte a tu cargo</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="400">
+            <div class="box">
+              <img src=" {% static 'website/assets/img/values-2.png' %} " class="img-fluid" alt="">
+              <h3>Crecimiento de tu negocio</h3>
+              <p>
+                Al optimizar la calidad del servicio para los usuarios, 
+                se reflejará en un incremento notable de usuarios que eligen 
+                el transporte público..</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="600">
+            <div class="box">
+              <img src=" {% static 'website/assets/img/values-3.png' %} " class="img-fluid" alt="">
+              <h3>Agiliza tus tiempos.</h3>
+              <p>
+                Simplifica tus tareas de gestión utilizando el panel que ponemos a tu disposición.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contacto" class="contact">
+
+      <div class="container" data-aos="fade-up">
+
+        <header class="section-header">
+          <h2>Contacto</h2>
+          <p>Contactanos</p>
+        </header>
+
+        <div class="row gy-4">
+
+          <div class="col-lg-6">
+
+            <div class="row gy-4">
+              <div class="col-md-6">
+                <div class="info-box">
+                  <i class="bi bi-geo-alt"></i>
+                  <h3>Direccion</h3>
+                  <p>Blvd. Gral. Marcelino García Barragán 1421,
+                    <br>Olímpica, 44430 Guadalajara</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="info-box">
+                  <i class="bi bi-telephone"></i>
+                  <h3>Llamanos</h3>
+                  <p>+33 3333 3333<br>+33 3333 3333</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="info-box">
+                  <i class="bi bi-envelope"></i>
+                  <h3>Correo</h3>
+                  <p>cronorutas@gmail.com</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="info-box">
+                  <i class="bi bi-clock"></i>
+                  <h3>Horario</h3>
+                  <p>Lunes a Viernes<br>9:00AM - 05:00PM</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-lg-6">
+            <form action="#" method="post" class="php-email-form">
+              {% csrf_token %}
+              <div class="row gy-4">
+
+                <div class="col-md-12">
+                  <input type="text" name="name" class="form-control" placeholder="Nombre" required>
+                </div>
+
+
+                <div class="col-md-12 ">
+                  <input type="email" class="form-control" name="email" placeholder="Correo" required>
+                </div>
+
+                <div class="col-md-12">
+                  <input type="text" class="form-control" name="subject" placeholder="Asunto" required>
+                </div>
+
+                <div class="col-md-12">
+                  <textarea class="form-control" name="message" rows="6" placeholder="Mensaje" required></textarea>
+                </div>
+
+                <div class="col-md-12 text-center">
+                  <div class="loading">Cargando</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">¡Su mensaje ha sido enviado. Gracias!</div>
+
+                  <button type="submit">Enviar</button>
+                </div>
+
+              </div>
+            </form>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-5 col-md-12 footer-info">
+            <a href="/#hero" class="logo d-flex align-items-center">
+              <img src=" {% static 'website/assets/img/logo.png' %} " alt="">
+              <span>CronoRutas</span>
+            </a>
+            <p>CronRutas, es un proyecto de la empresa ABMODEL diseñado para mejorar
+              la movilidad urbana en la ZMG.</p>
+            <div class="social-links mt-3">
+              <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+              <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+              <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+              <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-6 footer-links">
+            <h4>Enlaces</h4>
+            <ul>
+              <li><i class="bi bi-chevron-right"></i> <a href="/#hero">Inicio</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Terminos de Servivio</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Politicas de Privacidad</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-2 col-6 footer-links">
+            <h4>Nuestros Servicios</h4>
+            <ul>
+              <li><i class="bi bi-chevron-right"></i> <a href="/#services">Panel Administrador</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Aplicación Movil</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+            <h4>Contact Us</h4>
+            <p>
+              Blvd. Gral. Marcelino García Barragán 1421<br>
+              Olímpica, 44430 Guadalajara<br>
+              Jalisco, México <br><br>
+              <strong>Telefono:</strong> +33 3333 3333<br>
+              <strong>Correo:</strong> cronorutas@gmail.com<br>
+            </p>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>CronoRutas</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/flexstart-bootstrap-startup-template/ -->
+        <!-- Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> -->
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src=" {% static 'website/assets/vendor/purecounter/purecounter_vanilla.js' %} "></script>
+  <script src=" {% static 'website/assets/vendor/aos/aos.js' %} "></script>
+  <script src=" {% static 'website/assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %} "></script>
+  <script src=" {% static 'website/assets/vendor/glightbox/js/glightbox.min.js' %} "></script>
+  <script src=" {% static 'website/assets/vendor/isotope-layout/isotope.pkgd.min.js' %} "></script>
+  <script src=" {% static 'website/assets/vendor/swiper/swiper-bundle.min.js' %} "></script>
+  <script src=" {% static 'website/assets/vendor/php-email-form/validate.js' %} "></script>
+
+  <!-- Template Main JS File -->
+  <script src=" {% static 'website/assets/js/main.js' %} "></script>
+
+</body>
+
+</html>
